@@ -68,16 +68,18 @@ useParallaxTilt({
 
       <div class="hero__content">
         <span class="kicker" v-reveal>
-          <span class="kicker__bracket">◆</span>SYSTEM INTEGRATION ／ SINCE 2016
+          <span class="kicker__bracket">◆</span>PRECISION ENGINEERING · RELIABLE CODE ／ SINCE 2016
         </span>
 
         <h1 v-reveal>
-          把現場、圖資與資料庫，<br />
-          接成一張<span class="accent">看得懂</span>的作業圖。
+          以嚴謹系統架構，
+          築造
+          <span class="accent">穩健高效</span><br />
+          的數位基石。
         </h1>
 
         <p class="hero__desc" v-reveal>
-          地理資訊整合、三維圖台開發與企業系統客製。以工程方法管理專案：先量測、再設計、後施作。
+          專注於現代全端軟體研發、邊緣 AI 與空間資訊整合。以高可靠度架構，協助完成智慧化升級。
         </p>
 
         <div class="hero__ctas" v-reveal>
@@ -101,9 +103,9 @@ useParallaxTilt({
 
         <div class="hero__core-stage" ref="coreStageRef">
           <div class="core-glow-halo" aria-hidden="true"></div>
-          <span class="core-telemetry telemetry--tl">AI CORE ／ PURE KERNEL</span>
-          <span class="core-telemetry telemetry--br">LATENCY · 12ms · LIVE</span>
-          <img class="hero__pure-img" src="/images/ai-core-cropped.png" alt="AI Core 純核心與光纖脈絡全像示意圖" loading="eager" />
+          <span class="core-telemetry telemetry--tl">SYSTEM CORE ／ INTEGRATION ENGINE</span>
+          <span class="core-telemetry telemetry--br">SYNC · 跨系統整合 · LIVE</span>
+          <img class="hero__pure-img" src="/images/ai-core-cropped.png" alt="系統整合核心與跨系統資料脈絡全像示意圖" loading="eager" />
         </div>
 
         <div class="badge-chip" ref="badgeChipRef">
@@ -111,13 +113,13 @@ useParallaxTilt({
             <svg viewBox="0 0 24 24" fill="none"><path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z" fill="currentColor"/></svg>
           </span>
           <span class="badge-chip__text">
-            <b>純核心架構</b>
-            <span>PURE CORE SYNC</span>
+            <b>跨域整合架構</b>
+            <span>SYSTEM INTEGRATION</span>
           </span>
         </div>
 
         <div class="float-card" ref="floatCardRef">
-          <div class="float-card__label">UPTIME ／ 近 12 個月</div>
+          <div class="float-card__label">系統穩定度 ／ 近 12 個月</div>
           <div class="float-card__value">99.9%</div>
           <svg viewBox="0 0 180 40" fill="none" preserveAspectRatio="none">
             <path d="M0 28C14 28 14 14 28 14C42 14 42 24 56 24C70 24 70 8 84 8C98 8 98 20 112 20C126 20 126 12 140 12C154 12 154 22 168 22C174 22 176 20 180 18" stroke="#c9862f" stroke-width="2" stroke-linecap="round"/>

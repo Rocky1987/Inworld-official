@@ -29,8 +29,7 @@
             <li><a href="#capabilities">地理資訊系統整合</a></li>
             <li><a href="#capabilities">三維圖台與數位孿生</a></li>
             <li><a href="#capabilities">企業系統客製開發</a></li>
-            <li><a href="#capabilities">雲端架構與部署</a></li>
-            <li><a href="#capabilities">維運與技術支援</a></li>
+            <li><a href="#capabilities">雲端架構與部署</a></li>      
           </ul>
         </div>
 
@@ -47,9 +46,9 @@
         <div class="footer__col">
           <h4>聯絡我們</h4>
           <ul class="footer__contact">
-            <li><a href="mailto:contact@yinwo-tech.com">contact@yinwo-tech.com</a></li>
-            <li><a href="tel:+886200000000">+886-2-0000-0000</a></li>
-            <li><span>台北市｜詳細據點洽詢</span></li>
+            <li><a href="mailto:decievemyself@gmail.com">decievemyself@gmail.com</a></li>
+            <li><a href="tel:+886987623537">+886-987-623-537</a></li>
+            <li><span><a href="https://www.google.com/maps/place/新北市新莊區富貴路502號4樓" target="_blank" rel="noopener noreferrer">新北市新莊區富貴路502號4樓</a></span></li>
           </ul>
           <a class="btn btn--primary btn--small footer__cta" href="mailto:contact@yinwo-tech.com">
             需求諮詢
