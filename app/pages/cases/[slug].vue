@@ -83,14 +83,14 @@ onUnmounted(() => {
             </ul>
           </nav>
 
-          <div class="case__promo">
+          <!-- <div class="case__promo">
             <p class="case__promo-title">想要這套系統？</p>
             <p class="case__promo-desc">諮詢免費，依工時報價。</p>
             <a class="case__promo-link" href="/#contact">
               聯絡我們
               <svg viewBox="0 0 24 24" fill="none"><path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </a>
-          </div>
+          </div> -->
         </aside>
 
         <div class="case__content">
@@ -131,13 +131,13 @@ onUnmounted(() => {
             </ul>
           </article>
 
-          <div class="case__cta">
+          <!-- <div class="case__cta">
             <a class="btn btn--primary" href="/#contact">
               需求諮詢
               <svg viewBox="0 0 24 24" fill="none"><path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </a>
             <NuxtLink class="btn btn--ghost" to="/">查看其他應用實例</NuxtLink>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
