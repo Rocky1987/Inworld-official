@@ -76,14 +76,14 @@ onUnmounted(() => {
             </ul>
           </nav>
 
-          <div class="article__promo">
+          <!-- <div class="article__promo">
             <p class="article__promo-title">需要技術顧問？</p>
             <p class="article__promo-desc">諮詢免費，依需求報價。</p>
             <a class="article__promo-link" href="/#contact">
               聯絡我們
               <svg viewBox="0 0 24 24" fill="none"><path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </a>
-          </div>
+          </div> -->
         </aside>
 
         <div class="article__content">
@@ -115,13 +115,13 @@ onUnmounted(() => {
             </div>
           </article>
 
-          <div class="article__cta">
+          <!-- <div class="article__cta">
             <a class="btn btn--primary" href="/#contact">
               需求諮詢
               <svg viewBox="0 0 24 24" fill="none"><path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </a>
             <NuxtLink class="btn btn--ghost" to="/articles">查看其他技術專欄</NuxtLink>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -159,7 +159,6 @@ onUnmounted(() => {
 
 .article__head {
   position: relative;
-  max-width: 760px;
   padding: clamp(32px, 5vw, 56px) clamp(28px, 5vw, 48px);
   margin-bottom: clamp(48px, 6vw, 72px);
   border-radius: var(--radius-lg);
@@ -463,12 +462,6 @@ onUnmounted(() => {
   flex-wrap: wrap;
   gap: 14px;
   padding-top: clamp(28px, 4vw, 40px);
-}
-
-@media (max-width: 700px) {
-  .article__head {
-    max-width: none;
-  }
 }
 
 @media (max-width: 900px) {
