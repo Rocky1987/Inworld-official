@@ -26,10 +26,8 @@ const navItems: NavItem[] = [
     label: '應用實例',
     href: '/#cases',
     children: [
-      { label: '地理資訊管理系統', href: '/cases/gis' },
-      { label: '企業導入案例', href: '/#cases' },
-      { label: '三維圖台案例', href: '/#cases' },
-      { label: '系統整合案例', href: '/#cases' }
+      { label: '地理管理資訊系統', href: '/cases/gis' },
+      { label: '工程管理資訊系統', href: '/cases/engineering' }   
     ]
   },
   {
