@@ -23,28 +23,37 @@
       </div>
 
       <div class="footer__cols">
-        <div class="footer__col">
-          <h4>服務項目</h4>
+        <details class="footer__col footer__acc">
+          <summary class="footer__acc-summary">
+            <h4>服務項目</h4>
+            <svg class="footer__acc-chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </summary>
           <ul>
             <li><a href="/#services">軟體、AI 整合開發</a></li>
             <li><a href="/#services">舊系統翻新</a></li>
             <li><a href="/#services">軟硬體整合</a></li>
             <li><a href="/#services">維運與技術顧問</a></li>
           </ul>
-        </div>
+        </details>
 
-        <div class="footer__col">
-          <h4>公司資訊</h4>
+        <details class="footer__col footer__acc">
+          <summary class="footer__acc-summary">
+            <h4>公司資訊</h4>
+            <svg class="footer__acc-chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </summary>
           <ul>
             <li><a href="/#about">關於尹渥</a></li>
             <li><a href="/cases/gis">專案案例</a></li>
             <li><a href="/articles">技術專欄</a></li>
             <li><a href="/#process">導入流程</a></li>
           </ul>
-        </div>
+        </details>
 
-        <div class="footer__col">
-          <h4>聯絡我們</h4>
+        <details class="footer__col footer__acc">
+          <summary class="footer__acc-summary">
+            <h4>聯絡我們</h4>
+            <svg class="footer__acc-chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </summary>
           <ul class="footer__contact">
             <li><a href="mailto:decievemyself@gmail.com">decievemyself@gmail.com</a></li>
             <li><a href="tel:+886987623537">+886-987-623-537</a></li>
@@ -54,7 +63,7 @@
             需求諮詢
             <svg viewBox="0 0 24 24" fill="none"><path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
-        </div>
+        </details>
       </div>
     </div>
 
