@@ -26,23 +26,21 @@ const navItems: NavItem[] = [
     label: '應用實例',
     href: '/#cases',
     children: [
-      { label: '地理資訊管理系統', href: '/cases/gis' },
-      { label: '企業導入案例', href: '/#cases' },
-      { label: '三維圖台案例', href: '/#cases' },
-      { label: '系統整合案例', href: '/#cases' }
+      { label: '地理管理資訊系統', href: '/cases/gis' },
+      { label: '工程管理資訊系統', href: '/cases/engineering' }   
     ]
   },
-  {
-    label: '產品',
-    href: '/#capabilities',
-    children: [
-      { label: '地理資訊系統整合', href: '/#capabilities', desc: 'GIS 資料介接與圖資治理' },
-      { label: '三維圖台與數位孿生', href: '/#capabilities', desc: '3D Tile／BIM 整合展示' },
-      { label: '企業系統客製開發', href: '/#capabilities', desc: '流程系統與內部工具建置' },
-      { label: '雲端架構與部署', href: '/#capabilities', desc: '維運自動化與擴充規劃' },
-      { label: '維運與技術支援', href: '/#capabilities', desc: '版本迭代與現場支援' }
-    ]
-  },
+  // {
+  //   label: '產品',
+  //   href: '/#capabilities',
+  //   children: [
+  //     { label: '地理資訊系統整合', href: '/#capabilities', desc: 'GIS 資料介接與圖資治理' },
+  //     { label: '三維圖台與數位孿生', href: '/#capabilities', desc: '3D Tile／BIM 整合展示' },
+  //     { label: '企業系統客製開發', href: '/#capabilities', desc: '流程系統與內部工具建置' },
+  //     { label: '雲端架構與部署', href: '/#capabilities', desc: '維運自動化與擴充規劃' },
+  //     { label: '維運與技術支援', href: '/#capabilities', desc: '版本迭代與現場支援' }
+  //   ]
+  // },
   // {
   //   label: '解決方案',
   //   href: '#solutions',
@@ -97,7 +95,7 @@ const closeNav = () => {
         </span>
         <span class="brand__text">
           <span class="brand__name">尹渥資訊科技</span>
-          <span class="brand__tag">SYSTEM · GEOSPATIAL · 3D</span>
+          <span class="brand__tag">SYSTEM · Integration</span>
         </span>
       </a>
 
@@ -120,7 +118,7 @@ const closeNav = () => {
               :aria-label="`展開${item.label}選單`"
               @click="toggleDropdown(index)"
             >
-              <svg viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <svg viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </button>
           </div>
 
@@ -140,7 +138,7 @@ const closeNav = () => {
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3C6.98 3 3 6.36 3 10.5c0 3.2 2.4 5.94 5.75 7.05-.13.5-.7 2.4-.8 2.77 0 0-.02.13.07.18a.28.28 0 0 0 .22 0c.28-.04 3.16-2.08 3.98-2.65.61.08 1.24.13 1.88.13 5.02 0 9-3.36 9-7.5S17.02 3 12 3Z" fill="currentColor"/></svg>
           LINE諮詢
         </NuxtLink>
-        <a class="btn btn--primary" href="/#contact">
+        <a class="btn btn--primary" href="/contact">
           聯絡我們
           <svg viewBox="0 0 24 24" fill="none"><path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>
