@@ -37,9 +37,9 @@ onMounted(() => {
           </span>
         </a>
         <p class="footer__desc">整合AI技術與工具，提供智慧服務</p>
-        <div class="footer__coords">
+        <!-- <div class="footer__coords">
           <span class="pulse-dot" aria-hidden="true"></span>TPE 25.0330°N 121.5654°E
-        </div>
+        </div> -->
       </div>
 
       <div class="footer__cols">
