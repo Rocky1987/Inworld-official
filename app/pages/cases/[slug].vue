@@ -9,6 +9,14 @@ if (!caseItem.value) {
   await navigateTo('/')
 }
 
+useSeo({
+  title: () => `${caseItem.value?.title ?? '應用實例'}｜尹渥資訊科技應用實例`,
+  description: () => caseItem.value?.summary ?? '尹渥資訊科技應用實例，展示地理資訊系統與工程管理資訊系統的實務架構與導入成效。',
+  path: () => `/cases/${slug.value}`,
+  image: () => caseItem.value?.image,
+  type: 'article'
+})
+
 const activeId = ref(caseItem.value?.sections[0]?.id ?? '')
 let observer: IntersectionObserver | null = null
 
