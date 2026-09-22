@@ -291,8 +291,8 @@ button {
 }
 
 .nav__links a:hover {
-  color: var(--ink);
-  background: var(--bg-soft);
+  color: var(--blue-700);
+  background: var(--blue-100);
 }
 
 .nav__actions {
@@ -355,6 +355,17 @@ button {
 .btn--line:hover {
   background: #06c755;
   color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.btn--gold {
+  background: var(--gold);
+  color: #ffffff;
+  box-shadow: 0 10px 22px -12px rgba(201, 134, 47, 0.55);
+}
+
+.btn--gold:hover {
+  background: var(--gold-soft);
   transform: translateY(-1px);
 }
 
@@ -421,23 +432,28 @@ button {
 
 .nav-item__toggle {
   display: inline-flex;
-  width: 18px;
-  height: 18px;
-  margin-left: -2px;
+  width: 20px;
+  height: 20px;
+  margin-left: 0;
   align-items: center;
   justify-content: center;
   border: none;
   background: transparent;
-  color: var(--ink-faint);
+  color: var(--ink-soft);
   cursor: pointer;
   flex-shrink: 0;
   pointer-events: none;
 }
 
 .nav-item__toggle svg {
-  width: 11px;
-  height: 11px;
-  transition: transform 0.2s ease;
+  width: 14px;
+  height: 14px;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.nav-item:hover .nav-item__toggle,
+.nav-item.is-open .nav-item__toggle {
+  color: var(--blue-700);
 }
 
 .nav-item.is-open .nav-item__toggle svg {
