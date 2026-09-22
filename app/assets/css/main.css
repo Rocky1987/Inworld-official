@@ -1147,6 +1147,10 @@ button {
 }
 
 @media (max-width: 560px) {
+  .hero {
+    padding-bottom: 32px;
+  }
+
   .badge-chip {
     display: none;
   }
@@ -1161,6 +1165,7 @@ button {
   .hero__ctas {
     flex-direction: column;
     align-items: stretch;
+    margin-bottom: 32px;
   }
 
   .hero__ctas .btn {
@@ -1252,13 +1257,43 @@ button {
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--blue-300);
-  margin: 0 0 12px;
+  margin: 0;
   font-weight: 600;
+}
+
+.footer__acc-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+  text-align: left;
+  cursor: default;
+  pointer-events: none;
+}
+
+.footer__acc-chevron {
+  display: none;
+}
+
+.footer__acc-body {
+  overflow: hidden;
+  max-height: 400px;
+  transition: max-height 0.25s ease;
+}
+
+.footer__acc:not(.is-open) .footer__acc-body {
+  max-height: 0;
 }
 
 .footer__col ul {
   list-style: none;
-  margin: 0;
+  margin: 12px 0 0;
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -1346,13 +1381,65 @@ button {
 }
 
 @media (max-width: 560px) {
+  .site-footer {
+    padding-top: 24px;
+  }
+
+  .footer__top {
+    padding-bottom: 8px;
+  }
+
   .footer__cols {
     grid-template-columns: 1fr;
-    gap: 28px;
+    gap: 0;
+  }
+
+  .footer__acc {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .footer__acc:first-child {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .footer__acc-summary {
+    cursor: pointer;
+    pointer-events: auto;
+    padding: 12px 4px;
+  }
+
+  .footer__acc-body {
+    max-height: 0;
+  }
+
+  .footer__acc.is-open .footer__acc-body {
+    max-height: 320px;
+  }
+
+  .footer__acc-body ul {
+    padding-bottom: 12px;
+  }
+
+  .footer__acc .footer__cta {
+    margin-bottom: 12px;
+  }
+
+  .footer__acc-chevron {
+    display: block;
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    color: rgba(230, 238, 244, 0.5);
+    transition: transform 0.2s ease;
+  }
+
+  .footer__acc.is-open .footer__acc-chevron {
+    transform: rotate(180deg);
   }
 
   .footer__bottom {
     flex-direction: column;
     align-items: flex-start;
+    padding-block: 12px;
   }
 }
