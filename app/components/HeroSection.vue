@@ -83,11 +83,11 @@ useParallaxTilt({
         </p>
 
         <div class="hero__ctas" v-reveal>
-          <a class="btn btn--primary" href="#capabilities">
-            檢視系統能力
+          <a class="btn btn--primary" href="/#services">
+            服務項目
             <svg viewBox="0 0 24 24" fill="none"><path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
-          <a class="btn btn--ghost" href="#cases">瀏覽專案案例</a>
+          <a class="btn btn--ghost" href="/cases/gis">專案案例</a>
         </div>
 
         <div class="hero__scroll" v-reveal>
