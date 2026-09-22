@@ -1147,6 +1147,10 @@ button {
 }
 
 @media (max-width: 560px) {
+  .hero {
+    padding-bottom: 32px;
+  }
+
   .badge-chip {
     display: none;
   }
@@ -1161,6 +1165,7 @@ button {
   .hero__ctas {
     flex-direction: column;
     align-items: stretch;
+    margin-bottom: 32px;
   }
 
   .hero__ctas .btn {
@@ -1261,28 +1266,29 @@ button {
   align-items: center;
   justify-content: space-between;
   gap: 12px;
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+  text-align: left;
   cursor: default;
-  list-style: none;
-}
-
-.footer__acc-summary::-webkit-details-marker {
-  display: none;
-}
-
-.footer__acc-summary::marker {
-  content: '';
+  pointer-events: none;
 }
 
 .footer__acc-chevron {
   display: none;
 }
 
-.footer__acc:not([open]) > ul {
-  display: flex !important;
+.footer__acc-body {
+  overflow: hidden;
+  max-height: 400px;
+  transition: max-height 0.25s ease;
 }
 
-.footer__acc:not([open]) > .footer__cta {
-  display: inline-flex !important;
+.footer__acc:not(.is-open) .footer__acc-body {
+  max-height: 0;
 }
 
 .footer__col ul {
@@ -1375,6 +1381,14 @@ button {
 }
 
 @media (max-width: 560px) {
+  .site-footer {
+    padding-top: 24px;
+  }
+
+  .footer__top {
+    padding-bottom: 8px;
+  }
+
   .footer__cols {
     grid-template-columns: 1fr;
     gap: 0;
@@ -1390,20 +1404,24 @@ button {
 
   .footer__acc-summary {
     cursor: pointer;
-    padding: 16px 4px;
+    pointer-events: auto;
+    padding: 12px 4px;
   }
 
-  .footer__acc:not([open]) > ul,
-  .footer__acc:not([open]) > .footer__cta {
-    display: none !important;
+  .footer__acc-body {
+    max-height: 0;
   }
 
-  .footer__acc > ul {
-    padding-bottom: 16px;
+  .footer__acc.is-open .footer__acc-body {
+    max-height: 320px;
   }
 
-  .footer__acc > .footer__cta {
-    margin-bottom: 16px;
+  .footer__acc-body ul {
+    padding-bottom: 12px;
+  }
+
+  .footer__acc .footer__cta {
+    margin-bottom: 12px;
   }
 
   .footer__acc-chevron {
@@ -1415,12 +1433,13 @@ button {
     transition: transform 0.2s ease;
   }
 
-  .footer__acc[open] .footer__acc-chevron {
+  .footer__acc.is-open .footer__acc-chevron {
     transform: rotate(180deg);
   }
 
   .footer__bottom {
     flex-direction: column;
     align-items: flex-start;
+    padding-block: 12px;
   }
 }
