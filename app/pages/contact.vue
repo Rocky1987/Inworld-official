@@ -1,4 +1,11 @@
 <script setup lang="ts">
+useSeo({
+  title: '聯絡我們｜尹渥資訊科技有限公司',
+  description:
+    '歡迎與尹渥資訊科技聯繫，我們提供軟體開發、AI 整合、地理資訊系統與企業系統客製等技術顧問服務，將複雜的工程難題轉化為穩健落地的數位資產。',
+  path: '/contact'
+})
+
 const services = [
   '軟體開發',
   'AI 整合',

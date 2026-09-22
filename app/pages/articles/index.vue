@@ -1,5 +1,11 @@
 <script setup lang="ts">
 import { articles } from '~/data/articles'
+
+useSeo({
+  title: '技術專欄｜尹渥資訊科技有限公司',
+  description: '尹渥資訊科技技術專欄，分享全端開發、AI 整合、邊緣物聯網與地理資訊系統架構的產業快訊與實務筆記。',
+  path: '/articles'
+})
 </script>
 
 <template>

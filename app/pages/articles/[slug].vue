@@ -9,6 +9,13 @@ if (!article.value) {
   await navigateTo('/articles')
 }
 
+useSeo({
+  title: () => `${article.value?.title ?? '技術專欄'}｜尹渥資訊科技技術專欄`,
+  description: () => article.value?.excerpt ?? '尹渥資訊科技技術專欄，分享全端開發、AI 整合、邊緣物聯網與地理資訊系統架構的產業快訊與實務筆記。',
+  path: () => `/articles/${slug.value}`,
+  type: 'article'
+})
+
 const activeId = ref(article.value?.sections[0]?.id ?? '')
 let observer: IntersectionObserver | null = null
 
