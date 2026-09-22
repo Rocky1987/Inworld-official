@@ -24,4 +24,12 @@
   display: flex;
   flex-direction: column;
 }
+
+@media (max-width: 768px) {
+  .app-shell {
+    height: auto;
+    min-height: 100vh;
+    overflow: visible;
+  }
+}
 </style>

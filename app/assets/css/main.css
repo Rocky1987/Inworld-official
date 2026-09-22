@@ -88,6 +88,25 @@ body {
   display: none;
 }
 
+@media (max-width: 768px) {
+  html,
+  body {
+    height: auto;
+    overflow: visible;
+  }
+
+  .app-main {
+    overflow-y: visible;
+    scroll-snap-type: none;
+  }
+
+  .app-main > * {
+    min-height: auto;
+    scroll-snap-align: none;
+    scroll-snap-stop: normal;
+  }
+}
+
 .app-main > * {
   flex-shrink: 0;
   min-height: 100%;
