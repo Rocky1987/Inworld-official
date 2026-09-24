@@ -131,10 +131,17 @@ const closeNav = () => {
             </li>
           </ul>
         </li>
+
+        <li class="nav-item nav__line-link">
+          <a href="/line" @click="closeNav">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3C6.98 3 3 6.36 3 10.5c0 3.2 2.4 5.94 5.75 7.05-.13.5-.7 2.4-.8 2.77 0 0-.02.13.07.18a.28.28 0 0 0 .22 0c.28-.04 3.16-2.08 3.98-2.65.61.08 1.24.13 1.88.13 5.02 0 9-3.36 9-7.5S17.02 3 12 3Z" fill="currentColor"/></svg>
+            LINE 諮詢
+          </a>
+        </li>
       </ul>
 
       <div class="nav__actions">
-        <NuxtLink class="btn btn--line btn--small" to="/line">
+        <NuxtLink class="btn btn--line btn--small" to="/line" aria-label="LINE 諮詢">
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3C6.98 3 3 6.36 3 10.5c0 3.2 2.4 5.94 5.75 7.05-.13.5-.7 2.4-.8 2.77 0 0-.02.13.07.18a.28.28 0 0 0 .22 0c.28-.04 3.16-2.08 3.98-2.65.61.08 1.24.13 1.88.13 5.02 0 9-3.36 9-7.5S17.02 3 12 3Z" fill="currentColor"/></svg>
           LINE諮詢
         </NuxtLink>
