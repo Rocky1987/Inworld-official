@@ -25,7 +25,7 @@
   flex-direction: column;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px), (max-height: 800px) {
   .app-shell {
     height: auto;
     min-height: 100vh;
