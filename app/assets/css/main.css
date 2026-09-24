@@ -88,11 +88,14 @@ body {
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px), (max-height: 800px) {
   html,
   body {
     height: auto;
     overflow: visible;
+    /* 安全網：一般流排版下禁止任何元素撐出水平捲動軸（clip 不建立捲動容器，
+       不影響 header 的 position: sticky 與垂直捲動） */
+    overflow-x: clip;
   }
 
   .app-main {
@@ -312,6 +315,11 @@ button {
 .nav__links a:hover {
   color: var(--blue-700);
   background: var(--blue-100);
+}
+
+/* 桌機版導覽列已有獨立的 LINE 諮詢按鈕，僅在漢堡選單（≤900px）顯示此項目 */
+.nav__line-link {
+  display: none;
 }
 
 .nav__actions {
@@ -1160,12 +1168,72 @@ button {
     display: inline-flex;
   }
 
+  .nav__line-link {
+    display: block;
+    margin-top: 6px;
+    padding-top: 10px;
+    border-top: 1px solid var(--line-soft);
+  }
+
+  .nav__line-link a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 16px;
+    border-radius: var(--radius-sm);
+    background: #06c755;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .nav__line-link svg {
+    width: 18px;
+    height: 18px;
+  }
+
   .topbar__inner {
     font-size: 10px;
   }
 }
 
 @media (max-width: 560px) {
+  /* 手機版導覽列：brand + LINE諮詢 + 聯絡我們 + 漢堡按鈕的實際寬度約 515px，
+     在 390px 寬的手機上會撐破版面產生水平捲動，故在此收斂 nav__actions。 */
+  .nav {
+    gap: 12px;
+  }
+
+  .brand {
+    min-width: 0;
+  }
+
+  .nav__actions {
+    gap: 8px;
+    flex-shrink: 0;
+  }
+
+  /* 「聯絡我們」在漢堡選單內已有相同入口，手機版隱藏以釋出寬度 */
+  .nav__actions .btn--primary {
+    display: none;
+  }
+
+  /* LINE 諮詢收合為圓形圖示按鈕（文字改以 aria-label 提供） */
+  .nav__actions .btn--line {
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    gap: 0;
+    font-size: 0;
+    justify-content: center;
+  }
+
+  .nav__actions .btn--line svg {
+    width: 20px;
+    height: 20px;
+  }
+
   .hero {
     padding-bottom: 32px;
   }
@@ -1175,10 +1243,24 @@ button {
   }
 
   .float-card {
-    left: 6%;
-    bottom: 4%;
-    width: 168px;
-    padding: 14px 16px;
+    left: 8%;
+    bottom: 6%;
+    width: 128px;
+    padding: 10px 12px;
+  }
+
+  .float-card__label {
+    font-size: 8px;
+    margin-bottom: 5px;
+  }
+
+  .float-card__value {
+    font-size: 20px;
+    margin-bottom: 6px;
+  }
+
+  .float-card svg {
+    height: 22px;
   }
 
   .hero__ctas {
@@ -1189,6 +1271,89 @@ button {
 
   .hero__ctas .btn {
     justify-content: center;
+  }
+}
+
+/* -------------------------------------------------------------------------
+   矮螢幕筆電（寬度足夠但高度受限，例如 13"/14" 筆電）：
+   釘版式單頁捲動架構仍然套用，但 hero 與 footer 需要壓縮，
+   讓 hero 內容能完整落在 .app-main 的可視高度內。
+   僅在 min-width: 769px 時生效，不影響 768px 以下的行動裝置版面。
+   ------------------------------------------------------------------------- */
+@media (min-width: 769px) and (min-height: 801px) and (max-height: 1000px) {
+  .hero {
+    padding-block: 28px 32px;
+  }
+
+  .hero__grid {
+    gap: clamp(24px, 4vw, 48px);
+  }
+
+  .kicker {
+    margin-bottom: 16px;
+  }
+
+  .hero h1 {
+    font-size: clamp(30px, 3.4vw, 42px);
+    line-height: 1.28;
+    margin-bottom: 16px;
+  }
+
+  .hero__desc {
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 22px;
+  }
+
+  .hero__ctas {
+    margin-bottom: 20px;
+  }
+
+  .hero__scroll {
+    display: none;
+  }
+
+  .hero__visual--pure {
+    max-height: min(580px, 44vh);
+  }
+
+  .hero__pure-img {
+    width: auto;
+    height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+  }
+
+  .site-footer {
+    padding-top: 22px;
+  }
+
+  .footer__top {
+    gap: 24px;
+    padding-bottom: 16px;
+  }
+
+  .footer__col ul {
+    margin-top: 8px;
+    gap: 6px;
+  }
+
+  .footer__col a,
+  .footer__contact li {
+    font-size: 13px;
+  }
+
+  .footer__cta {
+    margin-top: 8px;
+  }
+
+  .footer__bottom {
+    padding-block: 10px;
+  }
+
+  .footer__top-btn {
+    width: 32px;
+    height: 32px;
   }
 }
 
