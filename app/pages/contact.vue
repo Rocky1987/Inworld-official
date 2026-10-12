@@ -115,16 +115,7 @@ const handleSubmit = () => {
         <div class="contact-page__side" v-reveal>
           <div class="contact-card">
             <h2 class="contact-card__subtitle">直接聯絡</h2>
-            <ul class="contact-direct">
-              <li>
-                <span class="contact-direct__icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1l-2.2 2.2Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                </span>
-                <span>
-                  <a href="tel:+886987623537">+886-987-623-537</a>
-                  <small>行動電話</small>
-                </span>
-              </li>
+            <ul class="contact-direct">         
               <li>
                 <span class="contact-direct__icon" aria-hidden="true">
                   <svg viewBox="0 0 24 24" fill="none"><path d="M12 3C6.98 3 3 6.36 3 10.5c0 3.2 2.4 5.94 5.75 7.05-.13.5-.7 2.4-.8 2.77 0 0-.02.13.07.18a.28.28 0 0 0 .22 0c.28-.04 3.16-2.08 3.98-2.65.61.08 1.24.13 1.88.13 5.02 0 9-3.36 9-7.5S17.02 3 12 3Z" fill="currentColor"/></svg>
