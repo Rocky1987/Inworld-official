@@ -80,8 +80,7 @@ onMounted(() => {
           </button>
           <div class="footer__acc-body">
             <ul class="footer__contact">
-              <li><a href="mailto:decievemyself@gmail.com">decievemyself@gmail.com</a></li>
-              <li><a href="tel:+886987623537">+886-987-623-537</a></li>
+              <li><a href="mailto:decievemyself@gmail.com">decievemyself@gmail.com</a></li>            
               <li><span><a href="https://www.google.com/maps/place/新北市新莊區富貴路502號4樓" target="_blank" rel="noopener noreferrer">新北市新莊區富貴路502號4樓</a></span></li>
             </ul>
             <a class="btn btn--primary btn--small footer__cta" href="mailto:decievemyself@gmail.com">
