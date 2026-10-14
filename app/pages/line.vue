@@ -1,4 +1,10 @@
 <script setup lang="ts">
+useSeo({
+  title: 'LINE 官方帳號｜尹渥資訊科技有限公司',
+  description: '加入尹渥資訊科技 LINE 官方帳號，掃描 QRCode 或點擊連結即可快速取得專案諮詢與客服回覆。',
+  path: '/line'
+})
+
 // 佔位資訊：待提供正式 LINE 官方帳號 QRCode 圖檔與好友連結後替換
 const lineFriendUrl = 'https://line.me/R/ti/p/@709mqmed'
 const lineId = '@709mqmed'

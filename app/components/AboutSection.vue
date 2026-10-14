@@ -1,8 +1,8 @@
 <script setup lang="ts">
 const stats = [
   { value: '2016', label: '成立年份', color: 'blue' },
-  { value: '25 人', label: '團隊規模', color: 'gold' },
-  { value: '120+', label: '累計交付專案', color: 'blue' }
+  { value: '3 人', label: '團隊規模', color: 'gold' },
+  { value: '100%', label: '專責交付', color: 'blue-500' }
 ]
 </script>
 
@@ -20,12 +20,13 @@ const stats = [
       </span>
 
       <h1 class="about__title">
-        一支不外包核心的<br />
-        小型工程團隊
+        現代架構與AI共舞，
+        驅動高品質系統落地
       </h1>
 
       <p class="about__desc">
-        成立於台北，由長期投入圖資與系統整合的工程師組成。規模不大，但每個專案都由主責工程師從頭跟到尾，不轉手、不換人。我們更在意交接文件、程式可讀性，以及三年後還跑得動這件事。
+        深耕全端技術與複雜場域管理系統，我們融合現代前後端分離架構、空間數據治理與新世代 AI 研發工作流，打造高效、敏捷的數位解決方案。
+        我們深知系統成功的關鍵在於理解真實業務與團隊透明協同。團隊以工程師思維為核心，確保每一行程式碼、每一份技術規格都經得起長期維運的考驗。
       </p>
 
       <ul class="about__stats">
@@ -140,6 +141,10 @@ const stats = [
 
 .about__stat-value.is-gold {
   color: var(--gold);
+}
+
+.about__stat-value.is-blue-500 {
+  color: var(--blue-500);
 }
 
 .about__stat-label {
